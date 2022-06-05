@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Macondo&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="body-element">
+    <header>
+      <div class="navbar-wraper">
+          <nav class="navbar" id="navbarlinks">
+              <ul class="ul-list">
+                  <li><a href="index.html" class="licontent">HOME</a></li>
+                  <li><a href="#" class="licontent">Developers
+                  </a></li>
+                  <div id="logo" class="Logo-main"><a href="index.html"><img class="logo" src="images/logo.PNG" alt="logo"></a></div>
+                  <li><a href="#" class="licontent">About</a></li>
+                  <li><a href="#" class="licontent">Contacts</a></li>
+              </ul>
+          </nav>
+          <div class="burger-wrapper"> 
+              <div id="logo" class="Logo"><a href="index.html"><img class="logo" src="images/logo.PNG" alt="logo"></a></div>
+               <div class="burger" id="burger">
+                   <div class="toggle-burger1" id="toggleBurger1"></div>
+                   <div class="toggle-burger2" id="toggleBurger2"></div>
+                   <div class="toggle-burger3" id="toggleBurger3"></div>
+              </div>
+      </div>
+      </div>
+  </header>
+  <h4 class="web-name">Georgian Front end developers</h4>
+    <section>
+      <div class="slider-wraper" id="slider-wraper">
+        <button class="arrow arrow-left" id="arrow-left"><</button>
+        <button class="arrow arrow-right"id="arrow-right">></button>
+        <div class="slider-content slider" id="slider-content"></div>
+      </div>
+    </section>
+    <section>
+      <div class="post-wraper" id="post-block"> </div>
+      <div class="overlay" id="overlay">
+        <div id="content"></div>
+        <div id="close"> <i class="fa-thin fa-circle-xmark"></i> </div>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>

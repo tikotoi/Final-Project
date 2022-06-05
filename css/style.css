@@ -1,0 +1,363 @@
+/* header */
+.header {
+    padding-top: 20px;
+    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 65;
+    
+}
+
+.burger-wrapper {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 100px ;
+    
+}
+
+.burger {
+    position: abolute;
+    cursor: pointer;
+}
+
+.toggle-burger1 {
+  height: 3px;
+  width: 25px;  
+  background-color: #ffffff;
+  margin-bottom: 4px;
+  border-radius: 5px;
+}
+
+.toggle-burger2 {
+    height: 3px;
+    width: 25px;  
+    background-color: #ffffff;
+    margin-bottom: 4px;
+    border-radius: 5px;
+  }
+
+.toggle-burger3 {
+    height: 3px;
+    width: 25px;  
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+
+.toggle-burger1.activate {
+    height: 3px;
+    width: 25px;  
+    background-color: #ffffff;
+    border-radius: 5px;
+    transform: translateY(5px) rotate(-45deg);
+    transition: 1s;
+  }
+
+  .toggle-burger2.activate {
+    height: 3px;
+    width: 25px;  
+    background-color: #ffffff;
+    border-radius: 5px;
+    transform: translateY(-2px) rotate(45deg);
+    transition: 1s;
+  }
+
+  .toggle-burger3.remove {
+    display: none;
+  }
+
+  .logo {
+    width: 60px;
+    display: block;
+    margin: auto;
+}
+
+.web-name {
+    color: white;
+    font-size: 18px;
+    font-family:'Macondo', cursive;
+}
+
+.search-input {
+    border: none;
+    border-bottom: 2px solid #ffff;
+    background-color: transparent;
+    width: 100px;
+    outline: none;
+    color: #ffff;
+    text-align: right;
+}
+
+.search-submit {
+    border: none;
+    background-color: transparent;
+    color: #ffff;
+    cursor: pointer;
+}
+
+/* log in form */
+
+
+.login {
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 5px;
+    color: #ffff;
+    font-size: 18px;
+    font-family:'Macondo', cursive;
+    position: absolute;
+    right: 15px;
+    top: 5px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    width: 100%;
+    background-color: white;
+    padding: 0 20px;
+    border-radius: 20px;
+    display: none;
+}
+
+
+
+.email-input {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.email-input, .login-psw {
+    margin-bottom: 5px;
+    margin-top: 16px;
+}
+
+.login-title {
+    font-size: 18px;
+    text-align: center;
+    font-weight: bolder;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 16px;
+    margin-bottom: 10px;
+}
+
+.login-rememberme {
+    margin-bottom: 16px;
+    margin-top: 16px;
+}
+
+.forgot-password{
+    margin-top: 16px;
+    margin-bottom: 16px;
+    text-align: end;
+
+}
+
+
+/* navigation */
+
+
+.navbar-wraper {
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    margin-bottom: 10px;
+    position: relative;
+    display: none;
+}
+
+.ul-list {
+    display: flex;
+    align-items: center;
+}
+
+.licontent {
+    color: #ffff;
+    font-size: 16px;
+    font-family: 'Macondo', cursive;
+}
+
+li {
+    position: relative;
+    transition: all 0.5s linear;
+}
+li::after {
+    content: ' ';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    height: 2px;
+    background-color: #ffff;
+    width: 0%;
+    transition: all 0.5s linear;
+}
+
+li:hover::after {
+    width: 100%;
+}
+
+/* responsive 768px */
+
+    .navbar {
+        display: none;
+        transition: 0.5s;
+    }
+    .ul-list {
+        flex-direction: column;
+        transition-timing-function: linear;
+
+    }
+    .ul-list li{
+        margin-bottom: 10px
+    }
+    
+    .navbar.activeNavigation{
+        display: block;
+    }
+
+    .navbar-wraper{
+        display: block;
+    }
+
+
+/* background color */
+.body-element {
+    background-color: black;
+    /* background: linear-gradient( #ebe8e6, #c4bcb4,#b6a39a,#805144, #876758);  */
+    /* background: linear-gradient(#dab7a3, #d39b75,#9ca18d,#628272,#21574a);  */
+    /* background: linear-gradient(#dde2e8, #a9c0c6,#8bb7b6,#005f75,#184c57);  */
+    /* background: linear-gradient(#eae6e7, #cab9a7,#a17864,#624645,#381e1d);  */
+    /* background: linear-gradient(#e2c9b3,#cab19d,#c39e81,#95765a);  */
+    /* background: linear-gradient(#e9e9eb, #dcb69c,#6d4e39);  */
+    /* background: linear-gradient(#b9bdbe, #97988a,#717252,#7d6f55,#4c442d); */
+    /* background: linear-gradient(#cfccbd, #aaa69b,#9fac9a,#314f37,#272b2a);  */
+    /* background: linear-gradient(#cfccbd, #aaa69b,#9fac9a);  */
+
+
+     background-repeat: no-repeat; 
+} 
+
+/* slider section*/
+/* .background {
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 1300px;
+    width: 100%;
+    margin: auto;
+    transform: rotate(90deg);
+} */
+
+.slider-section {
+    margin-top: 350px;
+}
+
+.slider-wraper {
+    max-width: 1000px;
+    width: 100%;
+    margin: auto;
+    height: 450px;
+    background-color: aliceblue;
+    position: relative;
+    margin-bottom: 300px;
+}
+
+.slide {
+    width: 100%;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #fff;
+    color: #717252;
+    font-size: 25px;
+    border: none;
+    cursor: pointer;
+}
+
+.arrow-left {
+    left:30px
+}
+
+.arrow-right {
+    right: 30px;
+}
+
+.slider-content{
+    height: 450px;
+    border: 10px solid #ffff;
+}
+
+.dot {
+    width: 30px;
+    height: 4px;
+    background-color:#fff;
+    cursor:pointer;
+    margin: 5px;
+}
+.dots {
+    display: flex;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 10px;
+}
+.dot.active {
+    background-color: #4c442d;
+}
+
+/* post section */
+
+.post-wraper {
+    display: flex;
+    flex-wrap: wrap;
+}
+.posts{
+    background-color: #bc744e;    ;
+    margin-bottom: 20px;
+    padding: 15px;
+    max-width: 400px;
+    width: 100%;
+    height: 200px;
+    margin-right: 10px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.overlay {
+    position: fixed;
+    top: 130px;
+    left: 300px;
+    max-width: 700px;
+    width: 100%;
+    height: 400px;
+    background-color: #595d44;
+    opacity: 80%;
+    display: none;
+    color: #531d13;
+    text-align: center;
+    font-size: 30px;    
+    font-weight: bolder;
+}
+
+.overlay.active {
+    display: block;
+}
+
+#close {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    font-size: 30px;
+    color: #531d13;
+    cursor: pointer;
+}
+

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>info</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Kaushan+Script&family=Macondo&family=Source+Code+Pro:wght@300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Kaushan+Script&family=Macondo&family=Source+Code+Pro:wght@300&display=swap" rel="stylesheet">    
+<link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="info-body">
+    <header class="header">
+        <button class="login" id="login">Log-in</button>
+        <div class="login-container" id="login-container">
+            <form action="" class="login-form" method="POST" id="login-form">
+              <i class="fa-solid fa-x loginx" id="loginx"></i>   
+              <h3 class="login-title">Log In</h3>
+                <div class="email-input"><label for="email" class="login-email">Email</label> <span> Create an account, <a href="#">Sign up</a></span></div>
+                <input type="email"  name="loginemail" required id="login-email" onkeydown="loginvalidation()">
+                <span class="login-errortext" id="error_email"></span>
+                <label for="psw" class="login-psw">Password</label>
+                <input type="password" name="psw" id="login-psw" required>
+                <i id="toggleIcon" class="fa-solid fa-eye"></i>
+                <span class="login-errortext" id="error_psw"></span>
+                <label class="login-rememberme">
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+                <button type="submit" class="login-button">Log in</button>
+                <span class="forgot-password"><a href="#">Forgot password?</a></span>
+            </form>
+        </div>
+        <div class="logo-container"><a href="index.html"><img class="logo" src="images/Logo.png" alt="logo"> <span class="web-name"> Georgian Front-end developers </span></a></div>
+    <div class="burger-wraper"> 
+             <div class="burger" id="burger">
+                 <div class="toggle-burger1" id="toggleBurger1"></div>
+                 <div class="toggle-burger2" id="toggleBurger2"></div>
+                 <div class="toggle-burger3" id="toggleBurger3"></div>
+            </div>
+            <div>
+                <form action="" class="search-form">
+                    <input type="text" placeholder="" name="search" class="search-input">
+                    <button type="submit" class="search-submit"> <i class="fa-solid fa-magnifying-glass search-icon" ></i></button>
+                </form>
+            </div>
+    </div>
+      <div class="navbar-wraper">
+          <nav class="navbar" id="navbarlinks">
+              <ul class="ul-list">
+                  <li class="nav-li"><a href="index.html" target="blank" class="licontent">HOME</a></li>
+                  <li class="nav-li" ><a href="developers.html" target="blank" class="licontent">Sites & Developers</a></li>
+                  <li class="nav-li"><a href="info.html" class="licontent">How it works</a></li>
+                  <li class="nav-li"><a href="#" class="licontent">Jobs & Probations</a></li>
+                  <li class="nav-li"><a href="#" class="licontent">Web Statistics</a></li>
+                  <li class="nav-li"><a href="#" class="licontent">Contact Us</a></li>
+              </ul>
+          </nav>
+      </div>
+  </header>
+  <section>
+    <div class="bg">
+      <div class="aboutus-container">
+        <h2 class="aboutus-title">About us</h2>
+        <p class="aboutus-text">Georgian Front-end developers Awards is a platform that highlights and promotes the Georgian's top websites and honors the best designers, developers, studios, and agencies who boost the web design.
+        </p> 
+        <p class="aboutus-text">We wanted to create a platform that highlights the most fabulous websites and spots the best-talented web designers. We also wanted to build a meeting point, where digital design professionals from find inspiration, impart knowledge and experience, connect, and share constructive, respectful critiques. “Always questioning”, “always evolving”.</p>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="bg-black">
+      <div>
+        <h3 class="participation-title">Why participate?</h3>
+        <div class="participation-block">
+          <div class="part-box">
+             <i class="fa-solid fa-gift part-icon"></i>
+             <h5 class="part-title"> Free</h5>
+             <p class="part-text">Awards is all-inclusive. No fees required, from nomination to winner!</p>
+          </div>
+          <div class="part-box">
+            <i class="fa-regular fa-lightbulb part-icon"></i>
+            <h5 class="part-title"> Value & credibility</h5>
+            <p class="part-text">Attract new visitors to your website and enhance your credibility through the marketing initiatives included in the prize package.</p>
+         </div>
+         <div class="part-box">
+          <i class="fas fa-business-time part-icon"></i>
+          <h5 class="part-title"> Unique Gala</h5>
+          <p class="part-text">10 finalists will be invited to the Web Awards Gala, held on 17 November 2022 in Borjomi.</p>
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="stage-bg">
+    <div >
+      <div class="jyry-wrapper">
+        <h3 class="jury-title">DISCOVER THE JURY 2022</h3>
+      <div id="Jury-container">
+        <ul id="july-list" class="jury-ul"></ul>
+    </div>
+    <div class="jurybutton-wraper">
+    <button id="loadprev">Less</button>
+    <button id="loadnext">More</button>
+    </div>
+  </div> 
+    <div class="phototitle">
+      <h2 class="gala-headtext">
+        See our latest photos from the Web Awards Gala
+      </h2>
+    </div>
+    <div class="gala-imageblock">
+      <a href="https://webawards.eurid.eu/" target="blank"><img class="gala-images" src="images/galatwo.jpg" alt="galapicture" /></a>
+      <a href="https://webawards.eurid.eu/" target="blank"><img class="gala-images" src="images/galathree.jpg" alt="galapicture" /></a>
+      <a href="https://webawards.eurid.eu/" target="blank"><img class="gala-images" src="images/galaone.jpg" alt="galapicture" /></a>
+    </div>
+  </div>
+  </section>
+
+
+
+    <footer>
+      <div class="footerwraper">
+        <div class="footer">
+          <div class="footerblock">
+            <a href="#" class="footerinfo">About Us</a>
+            <a href="#" class="footerinfo">Sign up</a>
+            <a href="#" class="footerinfo">Terms & Conditions</a>
+            <a href="#" class="footerinfo">Cookies Policy</a>
+            <a href="#" class="footerinfo">Contact Us</a>
+          </div>
+          <div class="footercontact">
+            <h2 class="blocktitle">Contact Info</h2>
+            <a class="linkto" href="mailto:example@yahoo.com">
+              <i class="fa-regular fa-envelope icon"></i> tiabuladze@gmail.com
+            </a>
+            <a class="linkto" href="callto:+03204224254">
+              <i class="fa-solid fa-phone icon"></i> +0 320 222 6565</a
+            >
+            <a class="linkto" href="https://goo.gl/maps/UcSKnppsjU3EXr9K9">
+              <i class="fa-solid fa-location-dot icon"></i> Main Str Chicago
+              Ilinois
+            </a>
+          </div>
+          <div class="social-icon">
+            <div class="social"> <a href="https://www.facebook.com/" target="blank"><i class="fa-brands fa-facebook-f"></i></a></div>
+            <div class="social"> <a href="https://twitter.com/" target="blank"><i class="fa-brands fa-twitter"></i></a></div>
+            <div class="social"> <a href="https://www.instagram.com/explore/" target="blank"><i class="fa-brands fa-instagram"></i> </a></div>
+          </div>
+        </div>
+        <div class="copyrightblock">
+          <p class="coyright">
+            Copyright © 2022 All rights reserved | This template is made with
+            love by Tiko
+          </p>
+        </div>
+      </div>
+    </footer>
+
+
+
+    
+    <script src="script.js"></script>
+    <script src="info.js"></script>
+  </body>
+</html>

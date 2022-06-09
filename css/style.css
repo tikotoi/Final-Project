@@ -7,7 +7,7 @@
     left: 0;
     width: 100%;
     z-index: 65;
-    background-color: black;
+    background-color:  black;
 }
 
 .burger-wraper {
@@ -89,18 +89,6 @@
     font-weight: bolder;
     color: #f8fcfb;
     text-shadow: 2px 2px 4px #bf7e06;
-    /* background-image: linear-gradient(
-        to right,
-        #462523 0,
-               #cb9b51 22%, 
-        #f6e27a 45%,
-        #f6f2c0 50%,
-        #f6e27a 55%,
-        #cb9b51 78%,
-        #462523 100%
-        );
-        color: transparent;
-       -webkit-background-clip:text; */
 }
 
 .search-input {
@@ -137,18 +125,6 @@
     right: 15px;
     top: 5px;
     cursor: pointer;
-    /* background-image: linear-gradient(
-        to right,
-        #462523 0,
-               #cb9b51 22%, 
-        #f6e27a 45%,
-        #f6f2c0 50%,
-        #f6e27a 55%,
-        #cb9b51 78%,
-        #462523 100%
-        );
-        color: transparent;
-       -webkit-background-clip:text; */
 }
 
 .login-form {
@@ -410,7 +386,6 @@
     box-shadow: 10px 5px #323333;
     background-color: #fff;
     position: relative;
-
 }
 
 
@@ -423,7 +398,6 @@
 .grid-img:hover {
     opacity: 0.5;
   }
-
 
 .site-name, .built-by{
     color: #449183;
@@ -772,6 +746,7 @@
         font-family: 'Roboto Mono', monospace;
         font-size: 20px;
         font-weight: bolder;
+        cursor: pointer;
     }
 
     .jurybutton-wraper {
@@ -1084,10 +1059,10 @@
         padding: 10px;
         margin-left: 10px;
         cursor: pointer;
+        position: relative;
     }
 
-
-    /* .scoreblock::after{
+    .scoreblock::after{
         content: 'Design';
         border-radius: 20px;
         background-color: #449183;
@@ -1096,7 +1071,8 @@
         font-size: 18px;
         padding: 10px 15px;
         align-items: center;
-    } */
+    } 
+
 
     .scoreblock:hover + .scoreblock::after{
         visibility: visible;
@@ -1115,17 +1091,6 @@
         color:#bf7e06;
     }
 
-    /* .scoreblock:nth-child(2)::after{
-        content: 'Usability';
-        border-radius: 20px;
-        background-color: #449183;
-        color: white;
-        visibility: hidden;
-        font-size: 18px;
-        padding: 10px 15px;
-        align-items: center;
-    } */
-
     .nb3{
         color:#17473e;
     }
@@ -1133,8 +1098,6 @@
     .nb4{
         color:#0962c5;
     }
-
-
 
     .scoreblock:first-child{
         border-color:  #bf0606  #bf0606  #bf0606 transparent;
@@ -1153,3 +1116,207 @@
         border-color: #0962c5 #0962c5  #0962c5 transparent;
     }
     
+    /* registration form */
+
+    /* registration instucture */
+
+    .accordion {
+        max-width: 700px;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        margin-right: 50px;
+    }
+    
+    .instruction-title {
+        color: #ffff;
+        font-family: 'Rubik', sans-serif;
+        font-size: 35px;
+        font-weight: bolder;
+        margin-bottom: 40px;
+        max-width: 700px;
+        width: 100%;
+        margin-top: 350px;
+        text-align: center;
+    }
+    
+    .container {
+        position: relative;
+        background-image: linear-gradient(to right,
+        #462523 0,
+               #cb9b51 22%, 
+        #f6e27a 45%,
+        #f6f2c0 50%,
+        #f6e27a 55%,
+        #cb9b51 78%,
+        #462523 100%);
+        padding: 10px;
+        margin-bottom: 33px;
+        color: #ffffff;
+        font-size: 25px;
+        font-weight: bolder;
+    }
+
+    .accordion-title{
+        position: relative;
+        cursor: pointer;
+        padding: 10px;
+        color: #ffff;
+        font-family: 'Rubik', sans-serif;
+        text-align: start;
+    }
+    
+    .accordion-title::after {
+        content: " ";
+        height: 2px;
+        width: 19px;
+        background-color: #ffffff;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 20px;
+        margin-bottom: 2px;
+      }
+    
+      .accordion-title::before {
+        content: " ";
+        height: 2px;
+        width: 19px;
+        background-color: #ffffff;
+        position: absolute;
+        top: 30%;
+        transform: translateY(-50%);
+        right: 20px;
+      }
+    
+    
+    .accordion-description {
+        width: 100%;
+        font-size: 16px;
+        height: 0;
+        overflow: hidden;
+        transition: 0.5s linear;
+        color: #ffff;
+        font-family: 'Rubik', sans-serif;
+    }
+    
+    .container.active .accordion-description {
+        height: 80px;
+    }
+    
+    .container.active .accordion-title::after {
+        content: " ";
+        height: 2px;
+        width: 19px;
+        background-color: #ffffff;
+        position: absolute;
+        top: 50%;
+        transform: rotate(45deg);
+        right: 20px;
+        margin-bottom: 2px;
+      }
+    
+      .container.active .accordion-title::before {
+        content: " ";
+        height: 2px;
+        width: 19px;
+        background-color: #ffffff;
+        position: absolute;
+        top: 50%;
+        transform: rotate(-45deg);
+        right: 20px;
+        margin-bottom: 2px;
+      }
+    
+
+.regist-instr-container{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 50px;
+    padding: 0 50px
+}
+
+.midwam-image{
+    background-image: url(../images/midwambg.jpg);
+    
+    width: 100%;
+    height: 700px;
+    background-repeat: no-repeat;
+    background-size: contain;   
+}
+
+.form-wrapper{
+    background-color: white;
+    margin: 0 auto;
+    max-width: 900px;
+    width: 100%;
+    background-image: linear-gradient(#462523, #cb9b51);
+    padding: 20px 50px 50px 50px;
+    border: 5px solid #f8fcfb;
+}
+
+.formtitle{
+    text-align: center;
+    color: #f8fcfb;
+    font-family: 'Rubik', sans-serif;
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 20px;
+
+}
+
+.label{
+    display: block;
+    font-family: 'Rubik', sans-serif;
+    color: #f8fcfb;
+    font-weight: 200;
+    font-size: 20px;
+    margin-bottom: 8px;
+    margin-top: 20px;
+}
+
+.block{
+    margin-bottom: 20px;
+}
+
+.checkagree, .categories4, .categories3, .categories2, .categories1 {
+    color: #f8fcfb;
+    font-family: 'Rubik', sans-serif;
+}
+
+#toggleIconreg{
+    color: #f8fcfb;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.button {
+    background-color: #17473e;
+    max-width: 90px;
+    width: 100%;
+    height: 50px;
+    border-radius: 30px;
+    border: none;
+    text-align: center;
+    color: #f8fcfb;
+    font-family: 'Rubik', sans-serif;
+    margin-top: 30px;
+    margin-right: 40px;
+    cursor: pointer;
+}
+
+.button:hover{
+    box-shadow: 5px 10px #f8fcfb;
+}
+
+.regist-input{
+    outline: none;
+    width: 100%;
+    height: 30px;
+    border: none;
+}
+
+.regpsw{
+    margin-bottom: 5px;
+}

@@ -177,7 +177,7 @@ document.getElementById('login-form').addEventListener('submit', function (event
     let loginpassword = document.getElementById('login-psw').value;
 
     if (loginpassword.length < 6) {
-        error.psw = {text: 'Password can not be empty  must be more then 6 characters'};
+        error.psw = {text: 'Password must be more than 6 characters'};
         error.psw.style = {color: 'red'};
     } 
 
@@ -304,3 +304,4 @@ function errorRender() {
 }
 
 getUsers();
+

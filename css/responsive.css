@@ -1,0 +1,214 @@
+@media (max-width: 1200px) {
+    .cover-container {
+        padding-top: 350px;
+    }
+
+    .avatar-container{
+        margin-bottom: 30px;
+    }
+    .avatarphoto{
+        max-width: 50px;
+        width: 100%;
+    }
+    .coverweb-title{
+        font-size: 25px;
+    }
+
+    .coverweb-by {
+        font-size: 12px;
+    }
+
+    .circle-box{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+    .circlebox-score {
+        font-size: 18px;
+    }
+
+    .visitsite-button {
+        width: 80px;
+        height: 40px;
+        font-size: 13px;
+        margin-top: 25px;
+        padding-top: 15px;
+    }
+    .phototitle{
+    margin-top: 400px;
+    }
+
+    .space-div {
+    margin-bottom: 500px;
+    }
+
+    .regist-instr-container {
+    flex-direction: column;
+    }
+
+    .accordion, .instruction-title{
+        max-width: none;
+    }
+}
+
+@media (max-width: 1040px) {
+    .space-div {
+        margin-bottom: 800px;
+    }
+}
+
+
+@media (max-width: 920px) {
+    .participation-block {
+        justify-content: center;
+    }
+    .gala-imageblock{
+        flex-direction: column;
+        align-content: center;
+    }
+    .space-div {
+        margin-bottom: 1200px;
+    }
+}
+
+@media (max-width: 850px) {
+    .cover-container {
+        padding-top: 370px;
+    }
+    .avatar-container{
+        margin-bottom: 8px;
+    }
+    .hearticon-box{
+        width: 70px;
+        height: 40px;
+    }
+    .coverweb-title{
+        font-size: 20px;
+    }
+    .coverweb-by {
+        font-size: 12px;
+    }
+    .visitsite-button {
+        margin-top: 15px;
+    }
+    
+}
+
+@media (max-width: 700px) {
+    .logo-container{
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .burger-wraper{
+        margin-top: 100px;
+    }
+    .cover-container {
+        padding-top: 450px;
+    }
+
+    .avatar-container{
+        margin-bottom: 130px;
+    }
+ 
+    .profileavatar-wraper{
+        flex-wrap: wrap;
+    }
+
+    .vote-block{
+        flex-direction: column;
+        height: 130px;
+    }
+
+    .scorefingerprint-block {
+        justify-content: space-around;
+    }
+    
+    .phototitle {
+        margin-top: 200px;
+
+    }
+}
+@media (max-width: 665px) {
+    .space-div {
+        margin-bottom: 1300px;
+    }
+    .midwam-image{
+        height: 400px;
+    }
+}
+
+@media (max-width: 550px) {
+    .footer {
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+
+    .footercontact {
+        margin: 30px 0;
+    }
+    
+    .aboutus-container{
+        height: 580px;
+    }
+
+    .bg-black{
+        padding: 100px 50px;
+    }
+    .participation-title {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 520px) {
+    .space-div {
+        margin-bottom: 2230px;
+    }
+
+    .midwam-image{
+        height: 300px;
+    }
+}
+
+
+
+
+@media (max-width: 460px) {
+    .burger-wraper{
+        padding: 0 50px;
+    }
+    .burger{
+        margin-right: 20px;
+    }
+   
+    .avatar-container {
+        flex-direction: column;
+    }
+
+    .win-day{
+        margin-bottom: 10px;
+    }
+    .avatarphoto{
+        width: 40px;
+    }
+
+    .scoreblock {
+    width: 30px;
+    height: 30px;
+    padding: 7px;
+}
+    .averagescore{
+     font-size: 25px;
+    }
+
+    .aboutus-container{
+        height: 880px;
+    }
+
+    .participation-title {
+        font-size: 22px;
+    }
+    .part-title {
+        font-size: 20px;
+    }
+}

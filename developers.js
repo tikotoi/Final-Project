@@ -25,7 +25,7 @@ loginx.addEventListener('click', function() {
         loginform.classList.remove('activelogin')
     })
 
-// log in password validation
+    // log in password validation
 
 document.getElementById('login-form').addEventListener('submit', function (event) {
     event.preventDefault();
@@ -92,15 +92,4 @@ if (loginemail.match(loginemailstructure)) {
     loginemailspan.innerHTML = 'Your Email is invalid';
     loginemailspan.style.color = 'red';
 }
-}
-
-// accordion registration instruction section
-
-
-let accordion = document.getElementsByClassName('container');
-
-for (let i = 0; i < accordion.length; i++) {
-    accordion[i].addEventListener('click', function() {
-        this.classList.toggle('active');
-    })
 }

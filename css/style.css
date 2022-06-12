@@ -1323,3 +1323,7 @@
 .regpsw{
     margin-bottom: 5px;
 }
+
+.error-text, .error-categories{
+    color: red;
+}

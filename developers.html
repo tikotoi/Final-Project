@@ -5,14 +5,20 @@
     <meta name="description" content="Georgian Front-end developers' sites" />
     <meta name="keywords" content="html, css, javaScript" />
     <meta name="autor" content="Tiko Abuladze" />
-    <meta property="og:url" content="https://tikotoi.github.io/Final-Project/" />
+    <meta
+      property="og:url"
+      content="https://tikotoi.github.io/Final-Project/"
+    />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Georgian Front-end Developers" />
     <meta
       property="og:description"
       content="Georgian Front-end developers Awards is a platform that highlights and promotes the Georgian's top websites and honors the best designers, developers, studios, and agencies who boost the web design."
     />
-    <meta property="og:image" content="https://www.trendingtopics.eu/wp-content/uploads/2017/05/WeAreDevelopers_Tamas-Kunsztler.jpg"/>
+    <meta
+      property="og:image"
+      content="https://www.trendingtopics.eu/wp-content/uploads/2017/05/WeAreDevelopers_Tamas-Kunsztler.jpg"
+    />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sites & Developers</title>
@@ -20,408 +26,542 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Kaushan+Script&family=Macondo&family=Source+Code+Pro:wght@300&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Kaushan+Script&family=Macondo&family=Source+Code+Pro:wght@300&display=swap" rel="stylesheet">    
-<link rel="stylesheet" href="css/reset.css" />
-<link rel="stylesheet" href="css/style.css" />
-<link rel="stylesheet" href="css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Kaushan+Script&family=Macondo&family=Source+Code+Pro:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Kaushan+Script&family=Macondo&family=Source+Code+Pro:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
   </head>
   <body class="home-body">
     <header class="header">
-        <button class="login" id="login">Log-in</button>
-        <div class="login-container" id="login-container">
-            <form action="#" class="login-form" method="POST" id="login-form">
-              <i class="fa-solid fa-x loginx" id="loginx"></i>   
-              <h3 class="login-title">Log In</h3>
-                <div class="email-input"><label for="login-email" class="login-email">Email</label> <span> Create an account, <a href="registration.html">Sign up</a></span></div>
-                <input type="email"  name="loginemail" required id="login-email" onkeydown="loginvalidation()">
-                <span class="login-errortext" id="error_email"></span>
-                <label for="login-psw" class="login-psw">Password</label>
-                <input type="password" name="psw" id="login-psw" required>
-                <i id="toggleIcon" class="fa-solid fa-eye"></i>
-                <span class="login-errortext" id="error_psw"></span>
-                <label class="login-rememberme">
-                <input type="checkbox" checked="checked" name="remember"> Remember me
-                </label>
-                <button type="submit" class="login-button">Log in</button>
-                <span class="forgot-password"><a href="#">Forgot password?</a></span>
-            </form>
+      <button class="login" id="login">Log-in</button>
+      <div class="login-container" id="login-container">
+        <form action="#" class="login-form" method="POST" id="login-form">
+          <i class="fa-solid fa-x loginx" id="loginx"></i>
+          <h3 class="login-title">Log In</h3>
+          <div class="email-input">
+            <label for="login-email" class="login-email">Email</label>
+            <span>
+              Create an account, <a href="registration.html">Sign up</a></span
+            >
+          </div>
+          <input
+            type="email"
+            name="loginemail"
+            required
+            id="login-email"
+            onkeydown="loginvalidation()"
+          />
+          <span class="login-errortext" id="error_email"></span>
+          <label for="login-psw" class="login-psw">Password</label>
+          <input type="password" name="psw" id="login-psw" required />
+          <i id="toggleIcon" class="fa-solid fa-eye"></i>
+          <span class="login-errortext" id="error_psw"></span>
+          <label class="login-rememberme">
+            <input type="checkbox" checked="checked" name="remember" /> Remember
+            me
+          </label>
+          <button type="submit" class="login-button">Log in</button>
+          <span class="forgot-password"><a href="#">Forgot password?</a></span>
+        </form>
+      </div>
+      <div class="logo-container">
+        <a href="index.html"
+          ><img class="logo" src="images/bloom.webp" alt="logo" />
+          <span class="web-name"> Georgian Front-end developers </span></a
+        >
+      </div>
+      <div class="burger-wraper">
+        <div class="burger" id="burger">
+          <div class="toggle-burger1" id="toggleBurger1"></div>
+          <div class="toggle-burger2" id="toggleBurger2"></div>
+          <div class="toggle-burger3" id="toggleBurger3"></div>
         </div>
-        <div class="logo-container"><a href="index.html"><img class="logo" src="images/bloom.webp" alt="logo"> <span class="web-name"> Georgian Front-end developers </span></a></div>
-    <div class="burger-wraper"> 
-             <div class="burger" id="burger">
-                 <div class="toggle-burger1" id="toggleBurger1"></div>
-                 <div class="toggle-burger2" id="toggleBurger2"></div>
-                 <div class="toggle-burger3" id="toggleBurger3"></div>
-            </div>
-            <div>
-                <form action="#" class="search-form">
-                    <input type="text" placeholder="" name="search" class="search-input">
-                    <button type="submit" class="search-submit"> <i class="fa-solid fa-magnifying-glass search-icon" ></i></button>
-                </form>
-            </div>
-    </div>
-      <div class="navbar-wraper">
-          <nav class="navbar" id="navbarlinks">
-              <ul class="ul-list">
-                  <li class="nav-li"><a href="index.html" target="blank" class="licontent">HOME</a></li>
-                  <li class="nav-li"><a href="developers.html" class="licontent">Sites & Developers</a></li>
-                  <li class="nav-li"><a href="info.html" target="blank" class="licontent">How it works</a></li>
-                  <li class="nav-li"><a href="#" class="licontent">Jobs & Probations</a></li>
-                  <li class="nav-li"><a href="#" class="licontent">Web Statistics</a></li>
-                  <li class="nav-li"><a href="#" class="licontent">Contact Us</a></li>
-              </ul>
-          </nav>
-      </div>
-  </header>
-  <section>
-  <div class="dev-bgimage">
-    <div class="cover-container">
-    <div class="avatar-container">
-      <h2 class="win-day">Site of the Day May 26, 2020</h2>
-      <div class="profileavatar-wraper">
-      <img class="avatarphoto" src="images/avatar4.jpg" alt="profileavatar">
-      <img class="avatarphoto" src="images/avatar3.jpg" alt="profileavatar">
-      <img class="avatarphoto" src="images/avatar2.jpg" alt="profileavatar">
-      <img class="avatarphoto" src="images/avatar1.jpg" alt="profileavatar">
-       <div class="hearticon-box">
-        <i class="fa-solid fa-heart"></i> <span>165</span>
-      </div>
-    </div>
-    </div>
-    <div class="covermiddle-section">
-      <h2 class="coverweb-title">26 MAY</h2>
-      <h3 class="coverweb-by">bY <span class="leavingstone">LEAVINGSTONE</span>  FROM GEORGIA WITH 7.43</h3>
-      <div class="circlebox-container">
         <div>
-        <div class="circle-box boxone"><p class="circlebox-score">7.65</p></div>
-        <p class="circxlebox-indicator indone">DESIGN</p>
+          <form action="#" class="search-form">
+            <input
+              type="text"
+              placeholder=""
+              name="search"
+              class="search-input"
+            />
+            <button type="submit" class="search-submit">
+              <i class="fa-solid fa-magnifying-glass search-icon"></i>
+            </button>
+          </form>
+        </div>
       </div>
-      <div>
-        <div class="circle-box boxtwo"><p class="circlebox-score">7.00</p></div>
-        <p class="circxlebox-indicator">USABILITY</p>
+      <div class="navbar-wraper">
+        <nav class="navbar" id="navbarlinks">
+          <ul class="ul-list">
+            <li class="nav-li">
+              <a href="index.html" target="blank" class="licontent">HOME</a>
+            </li>
+            <li class="nav-li">
+              <a href="developers.html" class="licontent">Sites & Developers</a>
+            </li>
+            <li class="nav-li">
+              <a href="info.html" target="blank" class="licontent"
+                >How it works</a
+              >
+            </li>
+            <li class="nav-li">
+              <a href="#" class="licontent">Jobs & Probations</a>
+            </li>
+            <li class="nav-li">
+              <a href="#" class="licontent">Web Statistics</a>
+            </li>
+            <li class="nav-li"><a href="#" class="licontent">Contact Us</a></li>
+          </ul>
+        </nav>
       </div>
-      <div>
-        <div class="circle-box boxthree"><p class="circlebox-score">7.33</p></div>
-        <p class="circxlebox-indicator">CREATIVITY</p>
+    </header>
+    <section>
+      <div class="dev-bgimage">
+        <div class="cover-container">
+          <div class="avatar-container">
+            <h2 class="win-day">Site of the Day May 26, 2020</h2>
+            <div class="profileavatar-wraper">
+              <img
+                class="avatarphoto"
+                src="images/avatar4.jpg"
+                alt="profileavatar"
+              />
+              <img
+                class="avatarphoto"
+                src="images/avatar3.jpg"
+                alt="profileavatar"
+              />
+              <img
+                class="avatarphoto"
+                src="images/avatar2.jpg"
+                alt="profileavatar"
+              />
+              <img
+                class="avatarphoto"
+                src="images/avatar1.jpg"
+                alt="profileavatar"
+              />
+              <div class="hearticon-box">
+                <i class="fa-solid fa-heart"></i> <span>165</span>
+              </div>
+            </div>
+          </div>
+          <div class="covermiddle-section">
+            <h2 class="coverweb-title">26 MAY</h2>
+            <h3 class="coverweb-by">
+              bY <span class="leavingstone">LEAVINGSTONE</span> FROM GEORGIA
+              WITH 7.43
+            </h3>
+            <div class="circlebox-container">
+              <div>
+                <div class="circle-box boxone">
+                  <p class="circlebox-score">7.65</p>
+                </div>
+                <p class="circxlebox-indicator indone">DESIGN</p>
+              </div>
+              <div>
+                <div class="circle-box boxtwo">
+                  <p class="circlebox-score">7.00</p>
+                </div>
+                <p class="circxlebox-indicator">USABILITY</p>
+              </div>
+              <div>
+                <div class="circle-box boxthree">
+                  <p class="circlebox-score">7.33</p>
+                </div>
+                <p class="circxlebox-indicator">CREATIVITY</p>
+              </div>
+              <div>
+                <div class="circle-box boxfour">
+                  <p class="circlebox-score">7.78</p>
+                </div>
+                <p class="circxlebox-indicator">CONTENT</p>
+              </div>
+            </div>
+          </div>
+          <div class="visitsite-button">
+            <a href="https://www.26may.ge/en" target="blank"
+              ><p class="visitsite-p">Visit Site</p></a
+            >
+          </div>
+        </div>
       </div>
-      <div>
-        <div class="circle-box boxfour"><p class="circlebox-score">7.78</p></div>
-        <p class="circxlebox-indicator">CONTENT</p>
-      </div>
-      </div>
+    </section>
+    <section>
+      <p class="sites-discription">
+        On 26th of May Georgia commemorates the adoption of the Act of
+        Independence, that established the Democratic Republic of Georgia. Our
+        aim was continuation of history with shared values.
+      </p>
+    </section>
+    <div class="webpagephoto-wraper">
+      <img class="webpagephoto" src="images/26may-first.jpg" alt="26may" />
+      <img
+        class="webpagephoto photopagetwo"
+        src="images/26may-second.jpg"
+        alt="26may"
+      />
     </div>
-    <div class="visitsite-button">
-      <a href="https://www.26may.ge/en" target="blank"><p class="visitsite-p">Visit Site</p></a>
-    </div>
-  </div>
-  </div>
-  </section>
-  <section>
-    <p class="sites-discription">  On 26th of May Georgia commemorates the adoption of the Act of Independence, that established the Democratic Republic of Georgia. Our aim was continuation of history with shared values.</p>
-  </section>
-<div class="webpagephoto-wraper">
-  <img class="webpagephoto" src="images/26may-first.jpg" alt="26may">
-  <img class="webpagephoto photopagetwo" src="images/26may-second.jpg" alt="26may">
-</div>
+    <section>
+      <div class="Judges-section">
+        <div class="Judgesblock-container">
+          <h5>Judges & Votes</h5>
+        </div>
+        <div class="vote-block">
+          <div class="imgname-block">
+            <img class="judgesphoto" src="images/Judge1.jpg" alt="judge" />
+            <div class="judgesname-block">
+              <h5>KIRAN KUMAR C K from India</h5>
+              <h6>Sr. Designer at Media. Monks</h6>
+            </div>
+          </div>
+          <div class="scorefingerprint-block">
+            <div class="score-wrapper">
+              <div class="scoreblock"><p class="score-number nb1">7</p></div>
+              <div class="scoreblock"><p class="score-number nb2">7</p></div>
+              <div class="scoreblock"><p class="score-number nb3">7</p></div>
+              <div class="scoreblock"><p class="score-number nb4">7</p></div>
+            </div>
+            <div class="fingerprint-box">
+              <p>jury</p>
+              <i class="fa-solid fa-fingerprint"></i>
+            </div>
+            <span class="averagescore">7.00</span>
+          </div>
+        </div>
+        <div class="vote-block">
+          <div class="imgname-block">
+            <img class="judgesphoto" src="images/Judge2.jpg" alt="judge" />
+            <div class="judgesname-block">
+              <h5>Jonas Lempa from Germany</h5>
+              <h6>Creative Director & Partner at Taikonauten</h6>
+            </div>
+          </div>
+          <div class="scorefingerprint-block">
+            <div class="score-wrapper">
+              <div class="scoreblock"><p class="score-number nb1">8</p></div>
+              <div class="scoreblock"><p class="score-number nb2">6</p></div>
+              <div class="scoreblock"><p class="score-number nb3">8</p></div>
+              <div class="scoreblock"><p class="score-number nb4">7</p></div>
+            </div>
+            <div class="fingerprint-box">
+              <p>jury</p>
+              <i class="fa-solid fa-fingerprint"></i>
+            </div>
+            <span class="averagescore">7.30</span>
+          </div>
+        </div>
 
-<section>
-  <div class="Judges-section">
-    <div class="Judgesblock-container">
-      <h5>Judges & Votes</h5> 
-    </div>
-    <div class="vote-block">
-      <div class="imgname-block">
-      <img class="judgesphoto" src="images/Judge1.jpg" alt="judge">
-      <div class="judgesname-block">
-        <h5>KIRAN KUMAR C K from India</h5>
-        <h6>Sr. Designer at Media. Monks</h6>
-      </div>
-    </div>
-    <div class="scorefingerprint-block">
-      <div class="score-wrapper">
-        <div class="scoreblock"><p class="score-number nb1">7</p></div>
-        <div class="scoreblock"><p class="score-number nb2">7</p></div>
-        <div class="scoreblock"><p class="score-number nb3">7</p></div>
-        <div class="scoreblock"><p class="score-number nb4">7</p></div>
-      </div>
-      <div class="fingerprint-box">
-        <p>jury</p>
-        <i class="fa-solid fa-fingerprint"></i>
-      </div>
-      <span class="averagescore">7.00</span>
-    </div>
-    </div>
-    <div class="vote-block">
-      <div class="imgname-block">
-      <img class="judgesphoto" src="images/Judge2.jpg" alt="judge">
-      <div class="judgesname-block">
-        <h5>Jonas Lempa from Germany</h5>
-        <h6>Creative Director & Partner at Taikonauten</h6>
-      </div>
-    </div>
-    <div class="scorefingerprint-block">
-      <div class="score-wrapper">
-        <div class="scoreblock"><p class="score-number nb1">8</p></div>
-        <div class="scoreblock"><p class="score-number nb2">6</p></div>
-        <div class="scoreblock"><p class="score-number nb3">8</p></div>
-        <div class="scoreblock"><p class="score-number nb4">7</p></div>
-      </div>
-      <div class="fingerprint-box">
-        <p>jury</p>
-        <i class="fa-solid fa-fingerprint"></i>
-      </div>
-      <span class="averagescore">7.30</span>
-    </div>
-    </div>
+        <div class="vote-block">
+          <div class="imgname-block">
+            <img class="judgesphoto" src="images/Judge3.jpg" alt="judge" />
+            <div class="judgesname-block">
+              <h5>Thiago Balzano from United States</h5>
+              <h6>AKQA - Associate Creative Director</h6>
+            </div>
+          </div>
+          <div class="scorefingerprint-block">
+            <div class="score-wrapper">
+              <div class="scoreblock"><p class="score-number nb1">8</p></div>
+              <div class="scoreblock"><p class="score-number nb2">8</p></div>
+              <div class="scoreblock"><p class="score-number nb3">7</p></div>
+              <div class="scoreblock"><p class="score-number nb4">8</p></div>
+            </div>
+            <div class="fingerprint-box">
+              <p>jury</p>
+              <i class="fa-solid fa-fingerprint"></i>
+            </div>
+            <span class="averagescore">7.80</span>
+          </div>
+        </div>
 
-    <div class="vote-block">
-      <div class="imgname-block">
-      <img class="judgesphoto" src="images/Judge3.jpg" alt="judge">
-      <div class="judgesname-block">
-        <h5>Thiago Balzano from United States</h5>
-        <h6>AKQA - Associate Creative Director</h6>
-      </div>
-    </div>
-    <div class="scorefingerprint-block">
-      <div class="score-wrapper">
-        <div class="scoreblock"><p class="score-number nb1">8</p></div>
-        <div class="scoreblock"><p class="score-number nb2">8</p></div>
-        <div class="scoreblock"><p class="score-number nb3">7</p></div>
-        <div class="scoreblock"><p class="score-number nb4">8</p></div>
-      </div>
-      <div class="fingerprint-box">
-        <p>jury</p>
-        <i class="fa-solid fa-fingerprint"></i>
-      </div>
-      <span class="averagescore">7.80</span>
-    </div>
-    </div>
+        <div class="vote-block">
+          <div class="imgname-block">
+            <img class="judgesphoto" src="images/Judge4.jpg" alt="judge" />
+            <div class="judgesname-block">
+              <h5>Marie Benoist from Australia</h5>
+              <h6>Product Designer at Canva</h6>
+            </div>
+          </div>
+          <div class="scorefingerprint-block">
+            <div class="score-wrapper">
+              <div class="scoreblock"><p class="score-number nb1">8</p></div>
+              <div class="scoreblock"><p class="score-number nb2">7</p></div>
+              <div class="scoreblock"><p class="score-number nb3">8</p></div>
+              <div class="scoreblock"><p class="score-number nb4">8</p></div>
+            </div>
+            <div class="fingerprint-box">
+              <p>jury</p>
+              <i class="fa-solid fa-fingerprint"></i>
+            </div>
+            <span class="averagescore">7.70</span>
+          </div>
+        </div>
 
-    <div class="vote-block">
-      <div class="imgname-block">
-      <img class="judgesphoto" src="images/Judge4.jpg" alt="judge">
-      <div class="judgesname-block">
-        <h5>Marie Benoist from Australia</h5>
-        <h6>Product Designer at Canva</h6>
-      </div>
-    </div>
-    <div class="scorefingerprint-block">
-      <div class="score-wrapper">
-        <div class="scoreblock"><p class="score-number nb1">8</p></div>
-        <div class="scoreblock"><p class="score-number nb2">7</p></div>
-        <div class="scoreblock"><p class="score-number nb3">8</p></div>
-        <div class="scoreblock"><p class="score-number nb4">8</p></div>
-      </div>
-      <div class="fingerprint-box">
-        <p>jury</p>
-        <i class="fa-solid fa-fingerprint"></i>
-      </div>
-      <span class="averagescore">7.70</span>
-    </div>
-    </div>
+        <div class="vote-block">
+          <div class="imgname-block">
+            <img class="judgesphoto" src="images/Judge5.jpg" alt="judge" />
+            <div class="judgesname-block">
+              <h5>Frédéric Marchand from Canada</h5>
+              <h6>President & Creative Director at Locomotive</h6>
+            </div>
+          </div>
+          <div class="scorefingerprint-block">
+            <div class="score-wrapper">
+              <div class="scoreblock"><p class="score-number nb1">7</p></div>
+              <div class="scoreblock"><p class="score-number nb2">8</p></div>
+              <div class="scoreblock"><p class="score-number nb3">7</p></div>
+              <div class="scoreblock"><p class="score-number nb4">8</p></div>
+            </div>
+            <div class="fingerprint-box">
+              <p>jury</p>
+              <i class="fa-solid fa-fingerprint"></i>
+            </div>
+            <span class="averagescore">7.40</span>
+          </div>
+        </div>
 
-    <div class="vote-block">
-      <div class="imgname-block">
-      <img class="judgesphoto" src="images/Judge5.jpg" alt="judge">
-      <div class="judgesname-block">
-        <h5>Frédéric Marchand from Canada</h5>
-        <h6>President & Creative Director at Locomotive</h6>
-      </div>
-    </div>
-    <div class="scorefingerprint-block">
-      <div class="score-wrapper">
-        <div class="scoreblock"><p class="score-number nb1">7</p></div>
-        <div class="scoreblock"><p class="score-number nb2">8</p></div>
-        <div class="scoreblock"><p class="score-number nb3">7</p></div>
-        <div class="scoreblock"><p class="score-number nb4">8</p></div>
-      </div>
-      <div class="fingerprint-box">
-        <p>jury</p>
-        <i class="fa-solid fa-fingerprint"></i>
-      </div>
-      <span class="averagescore">7.40</span>
-    </div>
-    </div>
+        <div class="vote-block">
+          <div class="imgname-block">
+            <img class="judgesphoto" src="images/Judge6.jpg" alt="judge" />
+            <div class="judgesname-block">
+              <h5>James Noble from Australia</h5>
+              <h6>Founder and UX Director at Carter Digital</h6>
+            </div>
+          </div>
+          <div class="scorefingerprint-block">
+            <div class="score-wrapper">
+              <div class="scoreblock"><p class="score-number nb1">8</p></div>
+              <div class="scoreblock"><p class="score-number nb2">6</p></div>
+              <div class="scoreblock"><p class="score-number nb3">7</p></div>
+              <div class="scoreblock"><p class="score-number nb4">8</p></div>
+            </div>
+            <div class="fingerprint-box">
+              <p>jury</p>
+              <i class="fa-solid fa-fingerprint"></i>
+            </div>
+            <span class="averagescore">7.20</span>
+          </div>
+        </div>
 
-    <div class="vote-block">
-      <div class="imgname-block">
-      <img class="judgesphoto" src="images/Judge6.jpg" alt="judge">
-      <div class="judgesname-block">
-        <h5>James Noble from Australia</h5>
-        <h6>Founder and UX Director at Carter Digital</h6>
-      </div>
-    </div>
-    <div class="scorefingerprint-block">
-      <div class="score-wrapper">
-        <div class="scoreblock"><p class="score-number nb1">8</p></div>
-        <div class="scoreblock"><p class="score-number nb2">6</p></div>
-        <div class="scoreblock"><p class="score-number nb3">7</p></div>
-        <div class="scoreblock"><p class="score-number nb4">8</p></div>
-      </div>
-      <div class="fingerprint-box">
-        <p>jury</p>
-        <i class="fa-solid fa-fingerprint"></i>
-      </div>
-      <span class="averagescore">7.20</span>
-    </div>
-    </div>
+        <div class="vote-block">
+          <div class="imgname-block">
+            <img class="judgesphoto" src="images/Judge7.jpg" alt="judge" />
+            <div class="judgesname-block">
+              <h5>Rick Dias from United States</h5>
+              <h6>Creative Director at RED Interactive Agency</h6>
+            </div>
+          </div>
+          <div class="scorefingerprint-block">
+            <div class="score-wrapper">
+              <div class="scoreblock"><p class="score-number nb1">8</p></div>
+              <div class="scoreblock"><p class="score-number nb2">6</p></div>
+              <div class="scoreblock"><p class="score-number nb3">8</p></div>
+              <div class="scoreblock"><p class="score-number nb4">7</p></div>
+            </div>
+            <div class="fingerprint-box">
+              <p>jury</p>
+              <i class="fa-solid fa-fingerprint"></i>
+            </div>
+            <span class="averagescore">7.30</span>
+          </div>
+        </div>
 
-    <div class="vote-block">
-      <div class="imgname-block">
-      <img class="judgesphoto" src="images/Judge7.jpg" alt="judge">
-      <div class="judgesname-block">
-        <h5>Rick Dias from United States</h5>
-        <h6>Creative Director at RED Interactive Agency</h6>
-      </div>
-    </div>
-    <div class="scorefingerprint-block">
-      <div class="score-wrapper">
-        <div class="scoreblock"><p class="score-number nb1">8</p></div>
-        <div class="scoreblock"><p class="score-number nb2">6</p></div>
-        <div class="scoreblock"><p class="score-number nb3">8</p></div>
-        <div class="scoreblock"><p class="score-number nb4">7</p></div>
-      </div>
-      <div class="fingerprint-box">
-        <p>jury</p>
-        <i class="fa-solid fa-fingerprint"></i>
-      </div>
-      <span class="averagescore">7.30</span>
-    </div>
-    </div>
+        <div class="vote-block">
+          <div class="imgname-block">
+            <img class="judgesphoto" src="images/Judge8.jpg" alt="judge" />
+            <div class="judgesname-block">
+              <h5>Lucas Nikitczuk from Argentina</h5>
+              <h6>Director at NK Studio</h6>
+            </div>
+          </div>
+          <div class="scorefingerprint-block">
+            <div class="score-wrapper">
+              <div class="scoreblock"><p class="score-number nb1">8</p></div>
+              <div class="scoreblock"><p class="score-number nb2">7</p></div>
+              <div class="scoreblock"><p class="score-number nb3">7</p></div>
+              <div class="scoreblock"><p class="score-number nb4">8</p></div>
+            </div>
+            <div class="fingerprint-box">
+              <p>jury</p>
+              <i class="fa-solid fa-fingerprint"></i>
+            </div>
+            <span class="averagescore">7.50</span>
+          </div>
+        </div>
 
-    <div class="vote-block">
-      <div class="imgname-block">
-      <img class="judgesphoto" src="images/Judge8.jpg" alt="judge">
-      <div class="judgesname-block">
-        <h5>Lucas Nikitczuk from Argentina</h5>
-        <h6>Director at NK Studio</h6>
-      </div>
-    </div>
-    <div class="scorefingerprint-block">
-      <div class="score-wrapper">
-        <div class="scoreblock"><p class="score-number nb1">8</p></div>
-        <div class="scoreblock"><p class="score-number nb2">7</p></div>
-        <div class="scoreblock"><p class="score-number nb3">7</p></div>
-        <div class="scoreblock"><p class="score-number nb4">8</p></div>
-      </div>
-      <div class="fingerprint-box">
-        <p>jury</p>
-        <i class="fa-solid fa-fingerprint"></i>
-      </div>
-      <span class="averagescore">7.50</span>
-    </div>
-    </div>
+        <div class="vote-block">
+          <div class="imgname-block">
+            <img class="judgesphoto" src="images/Judge9.jpg" alt="judge" />
+            <div class="judgesname-block">
+              <h5>Arnaud Rocca from France</h5>
+              <h6>Freelance creative developer</h6>
+            </div>
+          </div>
+          <div class="scorefingerprint-block">
+            <div class="score-wrapper">
+              <div class="scoreblock"><p class="score-number nb1">8</p></div>
+              <div class="scoreblock"><p class="score-number nb2">7</p></div>
+              <div class="scoreblock"><p class="score-number nb3">6</p></div>
+              <div class="scoreblock"><p class="score-number nb4">7</p></div>
+            </div>
+            <div class="fingerprint-box">
+              <p>jury</p>
+              <i class="fa-solid fa-fingerprint"></i>
+            </div>
+            <span class="averagescore">7.00</span>
+          </div>
+        </div>
 
-    <div class="vote-block">
-      <div class="imgname-block">
-      <img class="judgesphoto" src="images/Judge9.jpg" alt="judge">
-      <div class="judgesname-block">
-        <h5>Arnaud Rocca from France</h5>
-        <h6>Freelance creative developer</h6>
+        <div class="vote-block">
+          <div class="imgname-block">
+            <img class="judgesphoto" src="images/Judge10.jpg" alt="judge" />
+            <div class="judgesname-block">
+              <h5>Frédéric Marchand from Canada</h5>
+              <h6>President & Creative Director at Locomotive</h6>
+            </div>
+          </div>
+          <div class="scorefingerprint-block">
+            <div class="score-wrapper">
+              <div class="scoreblock"><p class="score-number nb1">8</p></div>
+              <div class="scoreblock"><p class="score-number nb2">7</p></div>
+              <div class="scoreblock"><p class="score-number nb3">8</p></div>
+              <div class="scoreblock"><p class="score-number nb4">8</p></div>
+            </div>
+            <div class="fingerprint-box">
+              <p>jury</p>
+              <i class="fa-solid fa-fingerprint"></i>
+            </div>
+            <span class="averagescore">7.70</span>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="scorefingerprint-block">
-      <div class="score-wrapper">
-        <div class="scoreblock"><p class="score-number nb1">8</p></div>
-        <div class="scoreblock"><p class="score-number nb2">7</p></div>
-        <div class="scoreblock"><p class="score-number nb3">6</p></div>
-        <div class="scoreblock"><p class="score-number nb4">7</p></div>
+    </section>
+    <section>
+      <div class="grid-wraper">
+        <div class="grid-box">
+          <div class="image-div">
+            <a href="" target="blank"
+              ><img class="grid-img" src="images/gurieli.png" alt="gurieli"
+            /></a>
+          </div>
+          <div>
+            <div class="weblink-shape">
+              <a href="https://icetea.ge/en" target="blank"
+                ><i class="fa-solid fa-share weblink-arrow"></i
+              ></a>
+            </div>
+            <h3 class="site-name">Gurieli Ice Team</h3>
+            <h4 class="built-by">BY LEAVINGSTONE</h4>
+          </div>
+        </div>
+        <div class="grid-box">
+          <div class="image-div">
+            <a href="https://axistowers.ge/" target="blank"
+              ><img class="grid-img" src="images/26may.jpg" alt="26may"
+            /></a>
+          </div>
+          <div>
+            <div class="weblink-shape">
+              <a href="https://www.26may.ge/en" target="blank"
+                ><i class="fa-solid fa-share weblink-arrow"></i
+              ></a>
+            </div>
+            <h3 class="site-name">26 May</h3>
+            <h4 class="built-by">BY LEAVINGSTONE</h4>
+          </div>
+        </div>
+        <div class="grid-box">
+          <div class="image-div">
+            <a href="https://axistowers.ge/" target="blank"
+              ><img class="grid-img" src="images/tolia.jpeg" alt="tolia"
+            /></a>
+          </div>
+          <div>
+            <div class="weblink-shape">
+              <a href="https://tolia.ge/" target="blank"
+                ><i class="fa-solid fa-share weblink-arrow"></i
+              ></a>
+            </div>
+            <h3 class="site-name">Tolia - The Longest Short Films</h3>
+            <h4 class="built-by">BY LEAVINGSTONE</h4>
+          </div>
+        </div>
+        <div class="grid-box">
+          <div class="image-div">
+            <a href="https://axistowers.ge/" target="blank"
+              ><img class="grid-img" src="images/34.jpeg" alt="34beer"
+            /></a>
+          </div>
+          <div>
+            <div class="weblink-shape">
+              <a href="http://www.beer34.ge/" target="blank"
+                ><i class="fa-solid fa-share weblink-arrow"></i
+              ></a>
+            </div>
+            <h3 class="site-name">34</h3>
+            <h4 class="built-by">BY LEAVINGSTONE</h4>
+          </div>
+        </div>
+        <div class="grid-box">
+          <div class="image-div">
+            <a href="https://axistowers.ge/" target="blank"
+              ><img class="grid-img" src="images/tbgarden.PNG" alt="tbgarden"
+            /></a>
+          </div>
+          <div>
+            <div class="weblink-shape">
+              <a href="http://tbilisigardens.ge/en" target="blank"
+                ><i class="fa-solid fa-share weblink-arrow"></i
+              ></a>
+            </div>
+            <h3 class="site-name">Tbilisi Gardens</h3>
+            <h4 class="built-by">BY LEAVINGSTONE</h4>
+          </div>
+        </div>
+        <div class="grid-box">
+          <div class="image-div">
+            <a href="https://axistowers.ge/" target="blank"
+              ><img class="grid-img" src="images/ikano.jpeg" alt="ikano"
+            /></a>
+          </div>
+          <div>
+            <div class="weblink-shape">
+              <a href="http://ikano.ge/" target="blank"
+                ><i class="fa-solid fa-share weblink-arrow"></i
+              ></a>
+            </div>
+            <h3 class="site-name">Ikano</h3>
+            <h4 class="built-by">BY LEAVINGSTONE</h4>
+          </div>
+        </div>
+        <div class="grid-box">
+          <div class="image-div">
+            <a href="https://axistowers.ge/" target="blank"
+              ><img class="grid-img" src="images/brewery.jpeg" alt="brewery"
+            /></a>
+          </div>
+          <div>
+            <div class="weblink-shape">
+              <a href="http://www.sheavset.ge/ge" target="blank"
+                ><i class="fa-solid fa-share weblink-arrow"></i
+              ></a>
+            </div>
+            <h3 class="site-name">Brewery</h3>
+            <h4 class="built-by">BY LEAVINGSTONE</h4>
+          </div>
+        </div>
       </div>
-      <div class="fingerprint-box">
-        <p>jury</p>
-        <i class="fa-solid fa-fingerprint"></i>
-      </div>
-      <span class="averagescore">7.00</span>
-    </div>
-    </div>
-
-    <div class="vote-block">
-      <div class="imgname-block">
-      <img class="judgesphoto" src="images/Judge10.jpg" alt="judge">
-      <div class="judgesname-block">
-        <h5>Frédéric Marchand from Canada</h5>
-        <h6>President & Creative Director at Locomotive</h6>
-      </div>
-    </div>
-    <div class="scorefingerprint-block">
-      <div class="score-wrapper">
-        <div class="scoreblock"><p class="score-number nb1">8</p></div>
-        <div class="scoreblock"><p class="score-number nb2">7</p></div>
-        <div class="scoreblock"><p class="score-number nb3">8</p></div>
-        <div class="scoreblock"><p class="score-number nb4">8</p></div>
-      </div>
-      <div class="fingerprint-box">
-        <p>jury</p>
-        <i class="fa-solid fa-fingerprint"></i>
-      </div>
-      <span class="averagescore">7.70</span>
-    </div>
-    </div>
-  </div>
-</section>
-<section>
-  <div class="grid-wraper">
-    <div class="grid-box">
-      <div class="image-div"><a href="" target="blank"><img class="grid-img" src="images/gurieli.png" alt="gurieli"></a></div>
-      <div>
-        <div class="weblink-shape"><a href="https://icetea.ge/en" target="blank"><i class="fa-solid fa-share weblink-arrow"></i></a></div>
-        <h3 class="site-name">Gurieli Ice Team</h3>
-        <h4 class="built-by">BY LEAVINGSTONE</h4>
-      </div>
-    </div>
-    <div class="grid-box">
-      <div class="image-div"><a href="https://axistowers.ge/" target="blank"><img class="grid-img" src="images/26may.jpg" alt="26may"></a></div>
-      <div>
-        <div class="weblink-shape"><a href="https://www.26may.ge/en" target="blank"><i class="fa-solid fa-share weblink-arrow"></i></a></div>
-        <h3 class="site-name">26 May</h3>
-        <h4 class="built-by">BY LEAVINGSTONE</h4>
-      </div>
-    </div>
-    <div class="grid-box">
-      <div class="image-div"><a href="https://axistowers.ge/" target="blank"><img class="grid-img" src="images/tolia.jpeg" alt="tolia"></a></div>
-      <div>
-        <div class="weblink-shape"><a href="https://tolia.ge/" target="blank"><i class="fa-solid fa-share weblink-arrow"></i></a></div>
-        <h3 class="site-name">Tolia - The Longest Short Films</h3>
-        <h4 class="built-by">BY LEAVINGSTONE</h4>
-      </div>
-    </div>
-    <div class="grid-box">
-      <div class="image-div"><a href="https://axistowers.ge/" target="blank"><img class="grid-img" src="images/34.jpeg" alt="34beer"></a></div>
-      <div>
-        <div class="weblink-shape"><a href="http://www.beer34.ge/" target="blank"><i class="fa-solid fa-share weblink-arrow"></i></a></div>
-        <h3 class="site-name">34</h3>
-        <h4 class="built-by">BY LEAVINGSTONE</h4>
-      </div>
-    </div>
-    <div class="grid-box">
-      <div class="image-div"><a href="https://axistowers.ge/" target="blank"><img class="grid-img" src="images/tbgarden.PNG" alt="tbgarden"></a></div>
-      <div>
-        <div class="weblink-shape"><a href="http://tbilisigardens.ge/en" target="blank"><i class="fa-solid fa-share weblink-arrow"></i></a></div>
-        <h3 class="site-name">Tbilisi Gardens</h3>
-        <h4 class="built-by">BY LEAVINGSTONE</h4>
-      </div>
-    </div>
-    <div class="grid-box">
-      <div class="image-div"><a href="https://axistowers.ge/" target="blank"><img class="grid-img" src="images/ikano.jpeg" alt="ikano"></a></div>
-      <div>
-        <div class="weblink-shape"><a href="http://ikano.ge/" target="blank"><i class="fa-solid fa-share weblink-arrow"></i></a></div>
-        <h3 class="site-name">Ikano</h3>
-        <h4 class="built-by">BY LEAVINGSTONE</h4>
-      </div>
-    </div>
-    <div class="grid-box">
-      <div class="image-div"><a href="https://axistowers.ge/" target="blank"><img class="grid-img" src="images/brewery.jpeg" alt="brewery"></a></div>
-      <div>
-        <div class="weblink-shape"><a href="http://www.sheavset.ge/ge" target="blank"><i class="fa-solid fa-share weblink-arrow"></i></a></div>
-        <h3 class="site-name">Brewery</h3>
-        <h4 class="built-by">BY LEAVINGSTONE</h4>
-      </div>
-    </div>
-  </div>
-</section>
+    </section>
     <footer>
       <div class="footerwraper">
         <div class="footer">
@@ -446,9 +586,21 @@
             </a>
           </div>
           <div class="social-icon">
-            <div class="social"> <a href="https://www.facebook.com/" target="blank"><i class="fa-brands fa-facebook-f"></i></a></div>
-            <div class="social"> <a href="https://twitter.com/" target="blank"><i class="fa-brands fa-twitter"></i></a></div>
-            <div class="social"> <a href="https://www.instagram.com/explore/" target="blank"><i class="fa-brands fa-instagram"></i> </a></div>
+            <div class="social">
+              <a href="https://www.facebook.com/" target="blank"
+                ><i class="fa-brands fa-facebook-f"></i
+              ></a>
+            </div>
+            <div class="social">
+              <a href="https://twitter.com/" target="blank"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+            </div>
+            <div class="social">
+              <a href="https://www.instagram.com/explore/" target="blank"
+                ><i class="fa-brands fa-instagram"></i>
+              </a>
+            </div>
           </div>
         </div>
         <div class="copyrightblock">

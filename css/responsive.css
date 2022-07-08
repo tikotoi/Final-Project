@@ -125,6 +125,14 @@
   .phototitle {
     margin-top: 200px;
   }
+
+  .grid-container {
+    display: block;
+  }
+  .contact-grid {
+    margin-bottom: 16px;
+  }
+
 }
 @media (max-width: 665px) {
   .space-div {

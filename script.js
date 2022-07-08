@@ -233,6 +233,3 @@ setInterval( () => {
 
 setSlide();
 
-
-
-

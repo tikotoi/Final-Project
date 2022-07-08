@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 @media (max-width: 1200px) {
   .cover-container {
     padding-top: 350px;
@@ -43,7 +50,10 @@
   }
 
   .regist-instr-container {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 
   .accordion,
@@ -60,15 +70,22 @@
 
 @media (max-width: 920px) {
   .participation-block {
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .gala-imageblock {
-    flex-direction: column;
-    align-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-line-pack: center;
+        align-content: center;
   }
   .space-div {
     margin-bottom: 1200px;
   }
+  
 }
 
 @media (max-width: 850px) {
@@ -91,11 +108,13 @@
   .visitsite-button {
     margin-top: 15px;
   }
+  
 }
 
 @media (max-width: 700px) {
   .logo-container {
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     text-align: center;
   }
   .burger-wraper {
@@ -110,16 +129,21 @@
   }
 
   .profileavatar-wraper {
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 
   .vote-block {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     height: 130px;
   }
 
   .scorefingerprint-block {
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 
   .phototitle {
@@ -131,6 +155,21 @@
   }
   .contact-grid {
     margin-bottom: 16px;
+  }
+
+  .grid-container{
+    margin-top: 300px;
+  }
+
+  .contact-circle{
+    margin-top: 10px;
+  }
+
+  .score-title{
+    font-size: 15px;
+  }
+  .imgname-block{
+    margin-top: 10px;
   }
 
 }
@@ -145,8 +184,13 @@
 
 @media (max-width: 550px) {
   .footer {
-    flex-direction: column;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 
   .footercontact {
@@ -163,6 +207,20 @@
   .participation-title {
     font-size: 35px;
   }
+
+  .avatar-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .judesvotes{
+    font-size: 16px;
+  }
+  .score-title{
+    font-size: 12px;
+  }
+
 }
 
 @media (max-width: 520px) {
@@ -181,10 +239,6 @@
   }
   .burger {
     margin-right: 20px;
-  }
-
-  .avatar-container {
-    flex-direction: column;
   }
 
   .win-day {
@@ -213,4 +267,13 @@
   .part-title {
     font-size: 20px;
   }
+.mynumber, .myemail {
+  font-size: 20px;
+}
+.judesvotes{
+  font-size: 12px;
+}
+.score-title{
+  font-size: 9px;
+}
 }

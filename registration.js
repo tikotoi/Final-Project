@@ -210,10 +210,10 @@ function webValidation() {
     let WebUrlSpan = document.getElementById('error_url');
 
     if (WebUrl.match(WebUrlStrucutre)) {
-        WebUrlSpan.innerHTML = 'Your URL is valid';
+        WebUrlSpan.innerHTML = 'Your Url is valid';
         WebUrlSpan.style.color = 'green';
     } else {
-        WebUrlSpan.innerHTML = 'Your Email is invalid';
+        WebUrlSpan.innerHTML = 'Your Url is invalid';
         WebUrlSpan.style.color = 'red';
     }
 }

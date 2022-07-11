@@ -148,7 +148,7 @@ document.getElementById('registration').addEventListener('submit', function (eve
     });
 
     if (WebCategories == false){
-        errors.WebCategories = 'Please select your age';
+        errors.categories = 'Please select your Web Category';
     }
     
     console.log(errors);
